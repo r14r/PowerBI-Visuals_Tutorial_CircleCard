@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@babel/runtime': 7.15.4
+  '@types/core-js': ^2.5.5
   '@types/d3': 7.4.0
+  core-js: 3.17.2
   d3: 7.6.1
-  powerbi-visuals-api: ~3.8.0
+  powerbi-visuals-api: ~3.8.4
   powerbi-visuals-utils-dataviewutils: 2.4.1
+  regenerator-runtime: 0.13.9
   ts-loader: 9.3.1
   tslint: ^5.20.1
   tslint-microsoft-contrib: ^6.2.0
@@ -12,13 +16,17 @@ specifiers:
   webpack: ^5.0.0
 
 dependencies:
+  '@babel/runtime': 7.15.4
   '@types/d3': 7.4.0
+  core-js: 3.17.2
   d3: 7.6.1
   powerbi-visuals-api: 3.8.4
   powerbi-visuals-utils-dataviewutils: 2.4.1
+  regenerator-runtime: 0.13.9
   webpack: 5.73.0
 
 devDependencies:
+  '@types/core-js': 2.5.5
   ts-loader: 9.3.1_3zhg573msb4eefp4jljvlczuiu
   tslint: 5.20.1_typescript@3.9.10
   tslint-microsoft-contrib: 6.2.0_67neen4t5xfhpau25dyc5p2yey
@@ -46,6 +54,13 @@ packages:
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
+
+  /@babel/runtime/7.15.4:
+    resolution: {integrity: sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.9
+    dev: false
 
   /@jridgewell/gen-mapping/0.3.2:
     resolution: {integrity: sha512-mh65xKQAzI6iBcFzwv28KVWSmCkdRBWoOh+bYQGW3+6OZvbbN3TqMGo5hqYxQniRcH9F2VZIoJCm4pa3BPDK/A==}
@@ -77,6 +92,10 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+
+  /@types/core-js/2.5.5:
+    resolution: {integrity: sha512-C4vwOHrhsvxn7UFyk4NDQNUpgNKdWsT/bL39UWyD75KSEOObZSKa9mYDOCM5FGeJG2qtbG0XiEbUKND2+j0WOg==}
+    dev: true
 
   /@types/d3-array/1.2.9:
     resolution: {integrity: sha512-E/7RgPr2ylT5dWG0CswMi9NpFcjIEDqLcUSBgNHe/EMahfqYaTx4zhcggG3khqoEB/leY4Vl6nTSbwLUPjXceA==}
@@ -518,6 +537,12 @@ packages:
   /concat-map/0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
+
+  /core-js/3.17.2:
+    resolution: {integrity: sha512-XkbXqhcXeMHPRk2ItS+zQYliAMilea2euoMsnpRRdDad6b2VY6CQQcwz1K8AnWesfw4p165RzY0bTnr3UrbYiA==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+    requiresBuild: true
+    dev: false
 
   /d3-array/3.2.0:
     resolution: {integrity: sha512-3yXFQo0oG3QCxbF06rMPFyGRMGJNS7NvsV1+2joOjbBE+9xvWQ8+GcMJAjRCzw06zQ3/arXeJgbPYcjUCuC+3g==}
@@ -1040,6 +1065,10 @@ packages:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
     dependencies:
       safe-buffer: 5.2.1
+
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}

@@ -23,3 +23,6 @@ install:
 	
 start:
 	pbiviz start
+
+package:
+	pbiviz package

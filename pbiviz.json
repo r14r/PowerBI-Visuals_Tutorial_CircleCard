@@ -9,9 +9,14 @@
     "supportUrl": "",
     "gitHubUrl": ""
   },
-  "apiVersion": "3.8.0",
-  "author": { "name": "", "email": "" },
-  "assets": { "icon": "assets/icon.png" },
+  "apiVersion": "3.8.4",
+  "author": {
+    "name": "Ralph Göstenmeier",
+    "email": "r14r@via-internet.de"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
   "externalJS": null,
   "style": "style/visual.less",
   "capabilities": "capabilities.json",

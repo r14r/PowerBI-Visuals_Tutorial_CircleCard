@@ -12,6 +12,36 @@
         }
     ],
     "objects": {
+        "circle": {
+            "displayName": "Farbe",
+            "properties": {
+                "circleColor": {
+                    "displayName": "Farbe",
+                    "description": "The fill color of the circle.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "circleThickness": {
+                    "displayName": "Thickness",
+                    "description": "The circle thickness.",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Text Size",
+                    "description": "The font size.",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
         "dataPoint": {
             "displayName": "Data colors",
             "properties": {
@@ -47,7 +77,7 @@
                         "fill": {}
                     }
                 },
-                 "fontSize": {
+                "fontSize": {
                     "displayName": "Text Size",
                     "type": {
                         "formatting": {
@@ -78,6 +108,16 @@
                         }
                     ]
                 }
+            },
+            "conditions": [
+                {
+                    "measure": {
+                        "max": 1
+                    }
+                }
+            ],
+            "single": {
+                "role": "measure"
             }
         }
     ]

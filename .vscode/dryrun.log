@@ -1,5 +1,5 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/Shared/CLOUD/Kunden/ErnstYoung/Repositories/Playground/Tutorial_CircleCard'
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'd:/KUNDEN/ERNST-YOUNG/Repositories.FromMe/PowerBI-Visuals_Tutorial_CircleCard'
 cat Makefile
-make: Leaving directory `/Users/Shared/CLOUD/Kunden/ErnstYoung/Repositories/Playground/Tutorial_CircleCard'
+make: Leaving directory 'd:/KUNDEN/ERNST-YOUNG/Repositories.FromMe/PowerBI-Visuals_Tutorial_CircleCard'
  

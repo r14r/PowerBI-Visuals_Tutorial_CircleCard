@@ -1,28 +1,32 @@
 {
-  "name": "visual",
-  "description": "default_template_value",
-  "repository": {
-    "type": "default_template_value",
-    "url": "default_template_value"
-  },
-  "license": "MIT",
-  "scripts": {
-    "pbiviz": "pbiviz",
-    "start": "pbiviz start",
-    "package": "pbiviz package",
-    "lint": "tslint -c tslint.json -p tsconfig.json"
-  },
   "dependencies": {
+    "@babel/runtime": "7.15.4",
     "@types/d3": "7.4.0",
+    "core-js": "3.17.2",
     "d3": "7.6.1",
-    "powerbi-visuals-api": "~3.8.0",
+    "powerbi-visuals-api": "~3.8.4",
     "powerbi-visuals-utils-dataviewutils": "2.4.1",
+    "regenerator-runtime": "0.13.9",
     "webpack": "^5.0.0"
   },
+  "description": "default_template_value",
   "devDependencies": {
+    "@types/core-js": "^2.5.5",
     "ts-loader": "9.3.1",
     "tslint": "^5.20.1",
     "tslint-microsoft-contrib": "^6.2.0",
     "typescript": "^3.0.0"
+  },
+  "license": "MIT",
+  "name": "visual",
+  "repository": {
+    "type": "default_template_value",
+    "url": "default_template_value"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "package": "pbiviz package",
+    "pbiviz": "pbiviz",
+    "start": "pbiviz start"
   }
 }
